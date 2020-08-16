@@ -1,0 +1,194 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1f2833;
+    font-family: 'Roboto', sans-serif;
+    min-height: 95vh;
+    min-width: 95vw;
+    text-align: justify;
+    line-height: 2;
+}
+ 
+#dropdownNav li {
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    position: relative;
+    overflow: visible;
+    height:1000px;
+}
+
+.sidenav li>a{
+    padding:0;
+}
+
+main {
+    color: rgb(255, 255, 255);
+    flex: 1 0 auto;
+    background-color: rgba(27, 27, 27, 0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    display: flex;
+    border: 2px dotted black;
+    border-radius: 5px;
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.contentData{
+    padding: 25px;
+    
+}
+
+.contentData hr{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color:white;
+    border:1px solid white;
+}
+
+.sidenav{
+    letter-spacing: 2px;
+}
+
+#logo {
+    height: auto;
+    width: 80%;
+}
+.card{
+    margin-bottom: 0px;
+    margin-top:10px;
+}
+
+.page-footer{
+    margin-top: 10px;
+}
+
+.visualizerData {
+    box-shadow: 0px 3px 10px black;
+}
+
+.visualizerData h2 {
+    text-shadow: 3px 3px 10px black;
+}
+
+.branding {
+    background-color: #0b0c10;
+    display: flex;
+    border-radius: 30px;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.branding a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+picture {
+    padding-top : 30px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 28;
+    font-weight: 750;
+}
+
+h5{
+    text-align: center;
+    font-size: 26;
+    font-weight: bold;
+}
+.nav-wrapper{
+    margin-top: 10px;
+    background-color: #0b0c10;
+}
+
+#sidenavbtn{
+    font-size:30px;
+}
+
+#sidenavbtn a:active{
+    color: red;
+}
+
+#dropdown1btn{
+    color: red;
+    font-size: 18px;
+}
+.card{
+    background-color: #0b0c10;
+}
+
+.page-footer{
+    background-color: #0b0c10;
+
+}
+
+.show {
+    display: block;
+}
+
+footer {
+    bottom: 0;
+}
+
+footer a:hover, .sidenav a:hover{
+    color: #0c79ed !important;
+    transition-duration: 0.5s;
+}
+
+.navLogo {
+    cursor: pointer;
+}
+
+.references {
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px black;
+    border: 2px dotted white;
+    background-color: #1f2833;
+}
+
+.refList {
+    padding: 10px 20px;
+}
+
+.teaPot {
+    height: 4em;
+    width: 4em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-wrapper li:hover > #dropdownNav {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+}
+
+#dropdownNav {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1100px){
+    #logo {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .container {
+        width: 95vw;
+    }
+}

@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ 
+.coronaTableCountry h2{
+    text-align:center;
+    text-transform: uppercase;
+    line-height:2.5;
+    color:white;
+    font-weight:600;
+    font-size: 1.5em !important;
+}
+
+#countrySelectLabel {
+    padding-top: 20px;
+}
+
+.coronaTableCountry p{
+    text-align:center;
+    margin-top:10px;
+}
+
+.coronaTableCountry td{
+    line-height:3;
+    width: 20%;
+    min-width: 200px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    justify-content:space-evenly;
+}
+
+.no-uppercase {
+    text-transform: none;
+}
+
+.coronaTableCountry #coronaTableHeader{
+    background-color:#0B0C10;
+    color:white;
+}
+
+.coronaTableCountry {
+    color:white;
+    font-family:'Ubuntu Mono', monospace;
+}
+
+.coronaTableCountry #coronaTableHeader{
+    font-size: 1em;
+}
+
+.coronaTracker {
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    visibility: hidden;
+}
+
+.mapTitle, .graphTitle, .chartTitle, .tableTitle{
+    text-align:center;
+    text-transform: uppercase;
+    font-family:'Share Tech Mono', monospace;
+    line-height:1.5;
+    letter-spacing: 2px;
+    color: #8DBBF6;
+    font-weight:600;
+    font-size: 1.7em;
+    margin: 20px 0px;
+}
+
+.mapTitle:hover, .graphTitle:hover, .chartTitle:hover, .tableTitle:hover{
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+hr{
+    border-top: 2px solid white;
+}
+.dropbutn {
+    background-color: #66fcf1;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+.dropdownmenu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncontent a {
+    text-justify: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdowncontent a:hover {background-color: grey;}
+
+.dropdownmenu:hover .dropdowncontent {display: block;}
+
+.dropdownmenu:hover .dropbutn {background-color: #46fca1;}
+
+.visualizerData {
+    border: 3px dotted white;
+    margin-top: 30px;
+
+}
+
+.coronaMapRegion {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coronaTableCountry table {
+    min-width: 500px !important;
+    width: 100%;
+    text-align: center;
+}
+
+.coronaPieChart {
+    height: 100%;
+    width: auto;
+}
+
+.coronaTableCountry {
+    overflow-x: auto;
+}
+
+#coronaSubmit-btn {
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+#coronaCountry {
+    padding-left: 20px;
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+.coronaTableCountry hr{
+    width: 100%;
+    overflow: visible;
+}
+
+.outcome {
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+.segmentedGraphs{
+    margin-top: 10px;
+    border: 2px white solid;
+}
+
+#mobilePinch {
+    display: none;
+}
+
+@media only screen and (max-width : 1000px){
+    .coronaTracker h2 {
+        font-size: 0.7em;
+    }
+
+    .outcome{
+        font-size: 0.8em;
+    }
+
+    .tableTitle:after {
+        font-family: 'Roboto', monospace;
+        content: "<- Mobile Scrollable ->";
+        font-size: 0.3em;
+    }
+
+    .coronaTableCountry {
+        overflow-x: auto;
+    }
+
+
+    .coronaTableCountry hr{
+        width: 1000px;
+        overflow-x: visible;
+    }
+
+    #mobilePinch {
+        display: block;
+    }
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap');
+body {
+    overflow-x: hidden;
+    font-family: 'Red Rose', cursive;
+    color: #505962;
+}
+
+.offset:before {
+    height: 3.6rem;
+    margin-top: -3.6rem;
+    content: "";
+    display: block;
+}
+
+
+/*--- Navbar --*/
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(85, 85, 85, 0.6)!important;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.image_rotate img {
+    animation: corona 3s linear infinite;
+}
+
+@keyframes corona {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link :hover {
+    color: orangered;
+}
+
+
+/*--- Slider --*/
+
+.carousel-item {
+    height: 80vh;
+}
+
+.btn-log {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+}
+
+
+/*--- Post Section butoon --*/
+
+.narrow {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.jumbotron {
+    border-radius: 0;
+    padding: 3rem 0 2rem;
+    position: relative;
+}
+
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.9rem;
+    text-align: center;
+}
+
+
+/*--- underline of post--
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: black;
+    margin: a auto 2rem;
+}
+
+
+--- End underline of post--*/
+
+.Post img {
+    max-width: 100%;
+    transition: transform .5s ease;
+    max-width: 70%;
+    padding-left: 29%;
+    align-self: center;
+    position: inherit;
+}
+
+.row.no-padding [class*=col-1] {
+    padding: 0;
+}
+
+.Post img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+
+.Post {
+    overflow: hidden;
+}
+
+.card {
+    margin: 2rem;
+}
+
+
+/*--start of Heading of Geographical map for medical--*/
+
+.medical_stores {
+    background-color: grey;
+    color: khaki;
+    text-align: center;
+}
+
+
+/*--End of Heading of Geographical map for medical--*/
+
+
+/*--Start of geographical map--*/
+
+.map,
+iframe {
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+
+.leftside,
+.rightside {
+    height: 80vh;
+    width: 100%;
+}
+
+.leftside {
+    background: #ffffff;
+}
+
+.rightside {
+    background: #ffffff;
+}
+
+
+/*--End of geographical map--*/
+
+
+/*--start of covid19 about--*/
+
+.sub_section {
+    background-color: #dfdfdfee;
+}
+
+
+/*--End of covid19 about--*/
+
+
+/*--- start contact us form--*/
+
+.sub_section_1 {
+    background-color: #1a1919d8;
+}
+
+
+/*--- End contact us form--*/
+
+
+/*--- Start footer top to scroll ---*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(245, 93, 38);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: orangered;
+}
+
+
+/*--- End footer top to scroll ---*/
+
+
+/*--- Media Queries --*/
+
+@media (max-width: 767px) {
+    .btn-log {
+        font-size: 1rem;
+    }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
